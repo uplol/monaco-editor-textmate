@@ -1,13 +1,12 @@
 {
-  "name": "monaco-editor-textmate",
+  "name": "@uplol/monaco-editor-textmate",
   "version": "2.2.2",
   "description": "Wire monaco-textmate with monaco-editor",
   "main": "dist/index.js",
   "typings": "dist/typings/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w",
-    "prepack": "npm run build"
+    "watch": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -31,7 +30,11 @@
     "typescript": "^2.8.3"
   },
   "peerDependencies": {
-    "monaco-editor": "0.x.x",
+    "@uplol/monaco-editor": "103.9.5",
     "monaco-textmate": "^3.0.0"
+  },
+  "dependencies": {
+    "@uplol/monaco-editor": "^103.9.5",
+    "monaco-textmate": "^3.0.1"
   }
 }
